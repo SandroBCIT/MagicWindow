@@ -3,6 +3,13 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+.quote p {
+    /*font-family: 'Yellowtail', cursive;*/
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 28pt;
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
 body{
     font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;overflow-x:hidden}
 #navlogo{
