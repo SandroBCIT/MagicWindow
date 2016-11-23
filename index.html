@@ -20,10 +20,13 @@
     <!-- Custom Fonts -->
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet">
-    
-    
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="img/favicon-01.png">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,8 +86,12 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" style="margin-top:100px;margin-bottom:50px;" src="img/magic-window-horz-type.png" alt="">
+                <div class="col-lg-12 hidden-sm hidden-xs col-md-12">
+                    <img class="img-responsive" id="biglogo" src="img/magic-window-horz-type.png" alt="">
+                  <br/>
+                </div>
+                <div class="col-sm-12 hidden-lg hidden-md">
+                  <img class="img-responsive" id="smalllogo" src="img/magic-window-vertscreen-type.png" alt="">
                 </div>
             </div>
         </div>
@@ -94,42 +101,59 @@
     <section class="success" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-xs-12 text-center">
                     <h2>About the artist</h2>
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div style="padding-left:15%;padding-right:15%;">
-                    <p>Hilary fell in love with photography at the age of 12, when she absconded with her mom’s Minolta 110 camera and never gave it back. Her passion has driven her photographic progress for over twenty years. Hilary’s authentic vision is the heart of her practice. From abstract photography to landscapes to weddings, she brings a unique, spontaneous vision to each photo.</p><br>
-                    <p>Hilary currently lives and works in Alberta. Her formal training includes early years of working as a darkroom technician, freelance journalist photography, and gallery shows. </p>
-                </div>
+              <div class="col-xs-1"></div>
+              <div class="col-xs-10 serif">
+                  <p>Hilary fell in love with photography at the age of 12, when she absconded with her mom’s Minolta 110 camera and never gave it back. Her passion has driven her photographic progress for over twenty years. Hilary’s authentic vision is the heart of her practice. From abstract photography to landscapes to weddings, she brings a unique, spontaneous vision to each photo.</p><br>
+                  <p>Hilary currently lives and works in Alberta. Her formal training includes early years of working as a darkroom technician, freelance journalist photography, and gallery shows. </p>
             </div>
         </div>
+      </div>
     </section>
-                       <div class="quote"><p style="padding-left:10%;padding-right:10%;" id="firstQuote"><i>
-                    “It feeds my soul and my spirit, and I need to do that. You know sometimes you just choose to put the camera away and just look. But for me, I really enjoy the active part of it. I enjoy looking back.”</i>
-                        </p></div>
-        <section id="portfolio">
+
+    <!--First Quote-->
+
+  <section id="portfolio">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-1"></div>
+          <div class="col-xs-10 quote">
+            <p class="serif" id="firstQuote"><i>“It feeds my soul and my spirit, and I need to do that. Sometimes you choose to put the camera away and just look. But I really enjoy the active part of it. I enjoy looking back.”</i></p>
+          </div>
+      </div>
+    </div>
+
     <div class="container">
         <div class="row">
-        <img src="./img/hilary.jpg" alt="Hilary" class="img-responsive col-lg-12 portfolio-item" style="margin:0 auto;"/>
-        </div></div></section>
-     <!-- Divider Bar -->
-    <div style="height:auto;width:100%;">
-        <section class="success" style="background-color:#3c929f;">
-            <div class="container">
-                <div class="row">
-                    <div style="padding-left:15%;padding-right:15%;">
-                        <p>Hilary developed her artistic photography to new levels with a Canon film camera that could produce double exposures. Within a year, she had her first art show. She blended unrelated subjects, like fire and ice, or cityscapes and nature, into compelling new images.</p><br>
-                    </div>
-                    <div class="col-lg-8 col-lg-offset-2 text-center">  
-                    </div>
-                </div>
+          <div class="col-lg-1"></div>
+            <div class="col-lg-10 portfolio-item">
+              <a>
+                <img src="./img/hilary.jpg" alt="Hilary" class="img-responsive wideimage">
+              </a>
             </div>
-        </section>    
+        </div>
     </div>
-    
+  </section>
+
+    <!-- Divider Bar -->
+    <section class="success" style="background-color:#3c929f;">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-10 serif">
+          <p class="serif">Hilary developed her artistic photography to new levels with a Canon film camera that could produce double exposures. Within a year, she had her first art show. She blended unrelated subjects, like fire and ice, or cityscapes and nature, into compelling new images.</p><br>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
     <!-- Portfolio Grid Section 1 -->
     <section id="portfolio">
         <div class="container">
@@ -137,60 +161,81 @@
                 <div class="col-lg-12 text-center">
                     <h2>double exposures</h2>
                     <hr class="star-primary">
-                    <div class="quote"><p style="padding-left:10%;padding-right:10%;"><i>“When I was doing film I loved the serendipity of it. Not knowing what you got until you got it."</i></p></div>
+                    <div class="quote">
+                      <p class="serif"><i>“When I was doing film I loved the serendipity of it. Not knowing what you got until you got it."</i></p>
+                    </div>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-lg-12 portfolio-item">
+              <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
-                        <img src="img/double_exposures/SCAN0000.JPG" class="img-responsive" alt="">
+                      <img src="img/double_exposures/SCAN0000.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+            </div>
+
+            <div class="row">
+              <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/double_exposures/SCAN0001.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/double_exposures/SCAN0002.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/double_exposures/SCAN0007.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/double_exposures/SCAN0011.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/double_exposures/SCAN0012.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
+
         </div>
     </section>
-     
+
     <!-- Divider Bar -->
-    <div style="height:auto;width:100%;">
-        <section class="success" style="background-color:#c3205f;">
-                <div class="container">
-                    <div class="row">
-                        <div style="padding-left:15%;padding-right:15%;">
-                            <p>After a few years of exploring double exposures, landscape photography, and portraiture, Hilary became known in the community. Wedding photography was a natural next step. She’s been photographing weddings for close to 20 years. 
-                            Hilary’s forte is capturing the joy, the spirit, and the special bond between the couple in a natural setting. Her candid style of documenting weddings reveals the life and celebration. Her earlier photography in film adds a special honesty and spontaneity to the photos.</p><br>
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2 text-center">  
-                        </div>
-                    </div>
-                </div>
-        </section>
-    </div>
-    
+    <section class="success" style="background-color:#c3205f;">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-10 serif">
+          <p>After a few years of exploring double exposures, landscape photography, and portraiture, Hilary became known in the community. Wedding photography was a natural next step. She’s been photographing weddings for close to 20 years.
+            Hilary’s forte is capturing the joy, the spirit, and the special bond between the couple in a natural setting. Her candid style of documenting weddings reveals the life and celebration. Her earlier photography in film adds a special honesty and spontaneity to the photos.</p><br>
+        </div>
+      </div>
+    </section>
+
     <!-- Portfolio Grid Section 2 -->
     <section id="portfolio2">
         <div class="container">
@@ -198,64 +243,88 @@
                 <div class="col-lg-12 text-center">
                     <h2>wedding film photograpy</h2>
                     <hr class="star-primary">
-                    <div class="quote"><p style="padding-left:10%;padding-right:10%;"><i>“To catch those those real moments when there's just raw unbridled - I don’t want to say passion, but you can just feel the connection between the couple.”</i></p></div>
+                    <div class="quote">
+                      <p><i>“To catch those those real moments when there's just raw unbridled - I don’t want to say passion, but you can just feel the connection between the couple.”</i></p></div>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-lg-12 portfolio-item">
+              <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/old_film_wedding/57450025_2.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/old_film_wedding/59760022.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
-                 <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/old_film_wedding/59770021_4.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/old_film_wedding/hilary0032_filtered_2.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/old_film_wedding/59870005.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/old_film_wedding/F1040017.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/old_film_wedding/F1040032.JPG" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
+
         </div>
     </section>
-    
+
     <!-- Divider Bar -->
-    <div style="height:auto;width:100%;">
-        <section class="success" style="background-color:#082c44;">
-            <div class="container">
-                <div class="row">
-                    <div style="padding-left:15%;padding-right:15%;">
-                        <p>Living on the Black Cat guest ranch provides a wealth of inspiration. The natural beauty of the Rocky Mountains is a constant source of new discoveries, adventures and photographs. Not one to turn down the opportunity for an amazing shot, Hilary takes her equipment on multi-day horseback trips deep into the Willmore Wilderness.</p><br>
-                    </div>
-                    <div class="col-lg-8 col-lg-offset-2 text-center">  
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    
+    <section class="success" style="background-color:#082c44;">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-10 serif">
+          <p>Living on the Black Cat guest ranch provides a wealth of inspiration. The natural beauty of the Rocky Mountains is a constant source of new discoveries, adventures and photographs. Not one to turn down the opportunity for an amazing shot, Hilary takes her equipment on multi-day horseback trips deep into the Willmore Wilderness.</p><br>
+        </div>
+      </div>
+    </section>
+
     <!-- Portfolio Grid Section 3 -->
     <section id="portfolio3">
         <div class="container">
@@ -263,70 +332,91 @@
                 <div class="col-lg-12 text-center">
                     <h2>nature photography</h2>
                     <hr class="star-primary">
-                    <div class="quote"><p style="padding-left:10%;padding-right:10%;"><i>
-                        “I've got pretty good at cantering my horse and taking photos. Some people are like, “you could break that, you paid $1800 for it!” But I’m like, was it made to be used or to sit on the shelf at home?”</i></p></div>
+                    <div class="quote">
+                      <p><i>“I've got pretty good at cantering my horse and taking photos. Some people are like, “you could break that, you paid $1800 for it!” But I’m like, was it made to be used or to sit on the shelf at home?”</i></p>
+                    </div>
                 </div>
             </div>
-           
+
             <div class="row">
-                <div class="col-lg-12 portfolio-item">
+              <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/jlake/DSC_0344.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/jlake/DSC_0289-2.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/jlake/DSC_0338.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/jlake/DSC_0331.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/jlake/DSC_0157.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/jlake/DSC_0176.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/jlake/DSC_0151.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
+
         </div>
     </section>
-     
-     
-    <!-- Divider Bar -->
-    <div style="height:auto;width:100%;">
-        <section class="success" style="background-color:#c3205f;">
-            <div class="container">
-                <div class="row">
-                    <div style="padding-left:15%;padding-right:15%;">
-                        <p>Blending wedding photography with the dramatic backdrops of the mountains was a natural continuation. Her most recent work shooting her daughter's wedding, riding across Jasper Lake on horseback, demonstrates this combination beautifully. The beauty of the landscape and the dynamic between the couple creates evocative images that capture the spirit of Hilary’s photography.
-                            </p><br>
 
-                        
-                    </div>
-                    <div class="col-lg-8 col-lg-offset-2 text-center">  
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    
+
+    <!-- Divider Bar -->
+    <section class="success" style="background-color:#c3205f;">
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10 serif">
+              <p>Blending wedding photography with the dramatic backdrops of the mountains was a natural continuation. Her most recent work shooting her daughter's wedding, riding across Jasper Lake on horseback, demonstrates this combination beautifully. The beauty of the landscape and the dynamic between the couple creates evocative images that capture the spirit of Hilary’s photography.</p><br>
+          </div>
+          <div class="col-lg-8 col-lg-offset-2 text-center"></div>
+      </div>
+    </section>
+
     <!-- Portfolio Grid Section 4 -->
     <section id="portfolio4">
         <div class="container">
@@ -334,95 +424,148 @@
                 <div class="col-lg-12 text-center">
                     <h2>a natural union</h2>
                     <hr class="star-primary">
-                    <div class="quote"><p style="padding-left:10%;padding-right:10%;"><i>                         “I guess uninhibited is what i’m looking for. Well what if my makeup is not perfect. What if you know? Who cares?”</i></p></div>
+                    <div class="quote">
+                      <p><i>“I guess uninhibited is what i’m looking for. Well what if my makeup is not perfect. What if you know? Who cares?”</i></p>
+                    </div>
                 </div>
             </div>
-                      <div class="row">
-                <div class="col-lg-12 portfolio-item">
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/13690898_10154221378134892_2284184868968784963_o.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/DSC_0354.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/DSC_0345.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/DSC_0952.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/DSC_0927.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/DSC_0588-2.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/DSC_0517.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                 <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/DSC_0551.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/DSC_0810.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/DSC_0481.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 portfolio-item">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 portfolio-item">
                     <a>
                         <img src="img/fran_malcom/DSC_0430.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
+
         </div>
     </section>
-   
-    <!-- Small white pace-->
-    <div style="height:110px;width:100%;background-color: white;"></div>
-    
+
     <!--About Future Section-->
-    <div style="height:auto;width:100%;">
-        <section class="success" style="background-color:#ffa94c;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2>About the Future</h2>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div style="padding-left:15%;padding-right:15%;">
-                        <p>After years of exploring artistic, landscape, and wedding photography, Hilary has achieved a distinct style full of personality, authenticity, and fun. She is always refining and exploring new ideas and styles. If you’re looking to capture amazing images, willing to take your shoes off and have some fun, and do something a little bit beyond, Magic Window Photography can move your wedding photos beyond the regular and onto the great. 
-                        </p></div></div></div></section>
-                        <br>
-                    <div class="quote" id="2Quote">    
-                    <p style="padding-left:10%;padding-right:10%;"><i>“I want to hear your ideas, and work with you to reflect your personality and vision. I’m always thinking, what can I do that will be interesting, fun, and inspiring?"</i></p>
-                    </div>
-                    <div class="col-lg-8 col-lg-offset-2 text-center">  
-                    </div>
+    <section class="success" style="background-color:#ffa94c;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2>About the Future</h2>
+              <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-10 serif">
+          <p>After years of exploring artistic, landscape, and wedding photography, Hilary has achieved a distinct style full of personality, authenticity, and fun. She is always refining and exploring new ideas and styles. If you’re looking to capture amazing images, willing to take your shoes off and have some fun, and do something a little bit beyond, Magic Window Photography can move your wedding photos beyond the regular and onto the great.
+          </p>
+        </div>
+      </div>
     </div>
-    
-    <!-- Contact Section 
+  </section>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="quote" id="2Quote">
+            <p><i>“I want to hear your ideas, and work with you to reflect your personality and vision. I’m always thinking, what can I do that will be interesting, fun, and inspiring?"</i></p>
+          </div>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 text-center"></div>
+      </div>
+    </div>
+
+
+    <!-- Contact Section
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -433,7 +576,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. 
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
                     <form name="sentMessage" id="contactForm" action="./mail/contact_me.php">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -506,9 +649,9 @@
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
-    
+
     <!-- Place for Modals -->
-    
+
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
 
